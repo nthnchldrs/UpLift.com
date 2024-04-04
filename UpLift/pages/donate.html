@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Uplift</title>
+    <link rel="stylesheet" href="../css/donateStyles.css">
+</head>
+<body>
+   <header>
+        <nav class="main-nav">
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="donate.html"  class="active">Donate</a></li>
+				<li><a href="volunteer.html">Volunteer</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+			<img src="../assets/Uplift_logo.png" alt="Uplift - Bringing Programs Together to Help People" class="hero-background">
+		</section>
+
+        <section class="donation-intro content-section">
+			<h1>Support Uplift: Make a Difference with Your Donation</h1>
+            <p>Your generous support plays a crucial role in advancing our mission at Uplift, alongside our partners Paws & Claws Humane Society and Cheap Thrills Charity Thrift Store. Each donation directly contributes to enhancing the lives of both humans and animals in our community, supporting vital programs and services that make a real difference.</p>     
+        </section>
+
+        <section class="why-donate content-section">
+            <h2>Why Donate?</h2>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <h3>Tax Benefits</h3>
+                    <p>Your donation is not only an act of kindness but also tax-deductible. Giving to Uplift can provide you with tax incentives, reducing your taxable income as a reward for your generosity.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Impact on Services</h3>
+                    <p>Every dollar you donate helps us to provide better services, expand our programs, and reach more individuals and animals in need. Your contribution means more rescued animals, more families supported, and a stronger community.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Community Building</h3>
+                    <p>By donating, you become a part of a compassionate community committed to positive change. Your support helps us to foster a culture of care, understanding, and mutual support.</p>
+                </div>
+			</div>
+        </section>
+
+        <section class="donation-form-section content-section">
+			<h2>How to donate:</h2>
+			<p>Choose how you'd like to contribute. Select one of our ‘quick’ donation options for convenience, or specify an amount that you're comfortable with. Every contribution, no matter the size, makes a difference.</p>
+			<form action="your-server-side-processing" method="POST" id="donation-form">
+				<fieldset>
+					<legend>I. Contact Information</legend>
+					<label for="full-name">Full Name:</label>
+					<input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
+
+					<label for="address">Street Address:</label>
+					<input type="text" id="address" name="address" placeholder="Street Address" required>
+
+					<label for="city">City:</label>
+					<input type="text" id="city" name="city" placeholder="City" required>
+
+					<label for="state">State:</label>
+					<input type="text" id="state" name="state" placeholder="State" required>
+					
+					<label for="zipcode">Zipcode:</label>
+					<input type="text" id="zipcode" name="zipcode" placeholder="Zipcode" required>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Email" required>
+
+					<label for="confirm-email">Confirm Email:</label>
+					<input type="email" id="confirm-email" name="confirm_email" placeholder="Confirm Email" required>
+				</fieldset>
+		
+				<fieldset>
+					<legend>II. Payment Information</legend>
+					<label for="card-name">Name on card:</label>
+					<input type="text" id="card-name" name="card_name" placeholder="Name on card" required>
+
+					<label for="card-number">Credit Card Number:</label>
+					<input type="text" id="card-number" name="card_number" placeholder="Credit Card Number" required>
+
+					<label for="issuer">Issuer:</label>
+					<select id="issuer" name="issuer">
+						<option value="visa">Visa</option>
+						<option value="mastercard">MasterCard</option>
+						<option value="amex">American Express</option>
+						<option value="discover">Discover</option>
+					</select>
+
+					<label for="cvv">CVV:</label>
+					<input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+	
+					<div class="payment-options">
+						<p>or make a Donation with:</p>
+						<a href="https://www.westernunion.com/us/en/home.html">
+							<img src="../assets/western-union-curved-64px.png" />
+						</a>
+						<a href="https://pay.google.com/about/pay-online/">
+							<img src="../assets/google-checkout-curved-64px.png" />
+						</a>
+						<a href="https://www.paypal.com/signin">
+							<img src="../assets/paypal-curved-64px.png" />
+						</a>
+				
+					</div>
+				</fieldset>
+	
+				<fieldset>
+					<legend>III. Select Donation Amount</legend>
+					<div class="donation-amounts">
+						<button type="button" name="donation" value="10.00">$10.00</button>
+						<button type="button" name="donation" value="25.00">$25.00</button>
+						<button type="button" name="donation" value="50.00">$50.00</button>
+						<button type="button" name="donation" value="100.00">$100.00</button>
+						<button type="button" name="donation" value="250.00">$250.00</button>
+					</div>
+					<label for="custom-amount">Enter Custom Amount:</label>
+					<input type="text" id="custom-amount" name="custom_amount" placeholder="Custom Amount" required>
+				</fieldset>
+				<div class="donate-button">
+					<button type="button" id="donateButton" name="Donate!" onclick="openModal()">Donate!</button>
+				</div>
+			</form>
+		</section>
+		
+		<section class="donation-cta content-section">
+			<h2>We Uplift Together.</h2>
+			<p>Your donation extends beyond monetary support—it's a beacon of hope and a testament to what we can achieve together. Thank you for being a vital part of our mission.</p>
+		</section>
+        
+		<section id="contact-us" class="contact-us-section content-section">
+			<h2>Join us in making a difference. <br>Discover how your involvement can help transform lives.</h2>
+			<div class="contact-info-section">
+				<p>Contact Us: <a href="mailto:info@uplift.org">info@uplift.org</a> | Phone: (888) 555-3737</p>
+			</div>
+		</section>
+        
+    </main>
+
+     <footer class="main-footer">
+		<h1>Uplift©2024</h1>
+        
+    </footer>
+
+    <script src="../js/donateScripts.js"></script>
+    
+	<div id="donationConfirmationModal" class="modal">
+		<div class="modal-content">
+			<span class="close-button">×</span>
+			<h2>Thank you for your donation!</h2>
+			<p>Thank you deeply for your generous donation to Uplift. Your support empowers us to continue our vital work, enriching the lives of both humans and animals within our community. Together, we are creating a ripple of positive change that extends far beyond our immediate reach. Your contribution is a testament to the power of collective action and compassion. Please know that your generosity is truly making a difference, enabling us to expand our programs, enhance our services, and touch more lives in meaningful ways. We are immensely grateful for your kindness and belief in our mission. A receipt of your donation has been sent to your email, serving not only as a record of your generosity but also as a token of our appreciation. Thank you once again for standing with us. We look forward to sharing the impact of your donation and the ongoing stories of hope and progress that your support makes possible. <br><br>Warmest regards, <br><br>The Uplift Team</p>
+			<div class="modal-close">
+			<button onclick="closeModal()">Close</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
