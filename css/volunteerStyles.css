@@ -404,9 +404,7 @@ footer {
         aspect-ratio: initial;
     }
 
-    .volunteer-interest-form-section form {
-        grid-template-columns: 1fr;
-    }
+   
 
     nav .nav-links {
         flex-direction: column;
@@ -417,12 +415,13 @@ footer {
         margin-bottom: 0.5rem;
     }
     
-      .volunteer-interest-form-section {
+    #volunteer-interest-form .contact-info{
+		flex-direction: column;
+		max-width: 12.5rem !important;
+	}
+	
+    .volunteer-interest-form-section {
         padding: 1rem;
-    }
-
-    #volunteer-interest-form .form-group {
-        grid-template-columns: 1fr;
     }
 
     #volunteer-interest-form .form-group-inline {
