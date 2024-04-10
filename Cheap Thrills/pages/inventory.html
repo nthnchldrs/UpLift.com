@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Cheap Thrills</title>
+    <link rel="stylesheet" href="../css/inventoryStyles.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=365653965827649" nonce="AdMELUty"></script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="inventory.html" class="active">Inventory</a></li>
+                <li><a href="donate.html">Donate Items</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../../assets/CT_logo_with_background.png" alt="Cheap Thrills Logo">
+            </div>
+
+            <div class="tagline">
+                <h2>One's trash...is another's treasure!</h2>
+            </div>
+
+            <div class="weather-widget">
+                <h3>Weather</h3>
+                <p id="weather-description">Loading weather...</p>
+                <p id="temperature"></p>
+                <p id="location"></p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for items...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-contents" id="inventory-tabs">
+            <ul class="tab-links">
+                <li class="active"><a href="#all-inventory-tab">All Inventory</a></li>
+                <li><a href="#clothes-tab">Clothes</a></li>
+                <li><a href="#furniture-tab">Furniture</a></li>
+                <li><a href="#jewelry-tab">Jewelry</a></li>
+                <li><a href="#media-tab">Media</a></li>
+                <li><a href="#toys-tab">Toys</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="all-inventory-tab" class="tab active">
+                    <div class="all-inventory">
+                        <div class="item-card">
+                            <img src="../assets/clothes1.jpg" alt="Green Dress" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Green Dress" data-price="$35.00">Green Dress</a></h3>
+                                <p class="item-price">$35.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/clothes2.jpg" alt="Asst. Dress Shirts" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Dress Shirts" data-price="$35.00">Asst. Dress Shirts</a></h3>
+                                <p class="item-price">$4.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/clothes3.jpg" alt="Asst. Blue Jeans" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Blue Jeans" data-price="$35.00">Asst. Blue Jeans</a></h3>
+                                <p class="item-price">$7.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/clothes4.jpg" alt="Asst. Shoes" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Shoes" data-price="$35.00">Asst. Shoes</a></h3>
+                                <p class="item-price">$10.00 - $20.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/clothes5.jpg" alt="Asst. T-Shirts" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. T-Shirts" data-price="$35.00">Asst. T-Shirts</a></h3>
+                                <p class="item-price">$2.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/furniture1.jpg" alt="Small Table w/ Chairs" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Small Table w/ Chairs" data-price="$35.00">Small Table w/ Chairs</a></h3>
+                                <p class="item-price">$35.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/furniture2.jpg" alt="Wooden Coffee Table" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Wooden Coffee Table" data-price="$35.00">Wooden Coffee Table</a></h3>
+                                <p class="item-price">$15.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/furniture3.jpg" alt="Leather Sofa" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Leather Sofa" data-price="$35.00">Leather Sofa</a></h3>
+                                <p class="item-price">$50.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/furniture4.jpg" alt="Green Sofa" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Green Sofa" data-price="$35.00">Green Sofa</a></h3>
+                                <p class="item-price">$35.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/jewelry1.jpg" alt="Silver Chain w/ Sapphire Heart" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Silver Chain w/ Sapphire Heart" data-price="$35.00">Silver Chain w/ Sapphire Heart</a></h3>
+                                <p class="item-price">$25.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/jewelry2.jpg" alt="Flower Necklace" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Flower Necklace" data-price="$35.00">Flower Necklace</a></h3>
+                                <p class="item-price">$5.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/media1.jpg" alt="Asst. Vinyl Records" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Vinyl Records" data-price="$35.00">Asst. Vinyl Records</a></h3>
+                                <p class="item-price">$5.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/media2.jpg" alt="Asst. DvDs" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. DvDs" data-price="$35.00">Asst. DvDs</a></h3>
+                                <p class="item-price">$3.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/toy1.jpg" alt="Buzz Lightyear Action Figure" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Buzz Lightyear Action Figure" data-price="$35.00">Buzz Lightyear Action Figure</a></h3>
+                                <p class="item-price">$2.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/toy2.jpg" alt="Wooden Train" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Wooden Train" data-price="$35.00">Wooden Train</a></h3>
+                                <p class="item-price">$3.00</p>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img src="../assets/toy3.jpg" alt="Asst. Action Figures" class="item-image">
+                            <div class="item-details">
+                                <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Action Figures" data-price="$35.00">Asst. Action Figures</a></h3>
+                                <p class="item-price">$2.00</p>
+                            </div>
+                        </div>
+                        <!-- Add more cards here -->
+
+                    </div>
+                </div>
+                <!--Clothing Inventory-->
+                <div id="clothes-tab" class="tab">
+                    <div class="clothes-inventory">
+                        <div class="clothes">
+                            <div class="item-card">
+                                <img src="../assets/clothes1.jpg" alt="Green Dress" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Green Dress" data-price="$35.00">Green Dress</a></h3>
+                                    <p class="item-price">$35.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/clothes2.jpg" alt="Asst. Dress Shirts" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Dress Shirts" data-price="$35.00">Asst. Dress Shirts</a></h3>
+                                    <p class="item-price">$4.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/clothes3.jpg" alt="Asst. Blue Jeans" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Blue Jeans" data-price="$35.00">Asst. Blue Jeans</a></h3>
+                                    <p class="item-price">$7.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/clothes4.jpg" alt="Asst. Shoes" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Shoes" data-price="$35.00">Asst. Shoes</a></h3>
+                                    <p class="item-price">$10.00 - $20.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/clothes5.jpg" alt="Asst. T-Shirts" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. T-Shirts" data-price="$35.00">Asst. T-Shirts</a></h3>
+                                    <p class="item-price">$2.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Furniture Inventory-->
+                <div id="furniture-tab" class="tab">
+                    <div class="furniture-inventory">
+                        <div class="furniture">
+                            <div class="item-card">
+                                <img src="../assets/furniture1.jpg" alt="Small Table w/ Chairs" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Small Table w/ Chairs" data-price="$35.00">Small Table w/ Chairs</a></h3>
+                                    <p class="item-price">$35.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/furniture2.jpg" alt="Wooden Coffee Table" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Wooden Coffee Table" data-price="$35.00">Wooden Coffee Table</a></h3>
+                                    <p class="item-price">$15.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/furniture3.jpg" alt="Leather Sofa" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Leather Sofa" data-price="$35.00">Leather Sofa</a></h3>
+                                    <p class="item-price">$50.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/furniture4.jpg" alt="Green Sofa" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Green Sofa" data-price="$35.00">Green Sofa</a></h3>
+                                    <p class="item-price">$35.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Jewelry Inventory-->
+                <div id="jewelry-tab" class="tab">
+                    <div class="jewelry-inventory">
+                        <div class="jewelry">
+                            <div class="item-card">
+                                <img src="../assets/jewelry1.jpg" alt="Silver Chain w/ Sapphire Heart" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Silver Chain w/ Sapphire Heart" data-price="$35.00">Silver Chain w/ Sapphire Heart</a></h3>
+                                    <p class="item-price">$25.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/jewelry2.jpg" alt="Flower Necklace" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Flower Necklace" data-price="$35.00">Flower Necklace</a></h3>
+                                    <p class="item-price">$5.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Media Inventory-->
+                <div id="media-tab" class="tab">
+                    <div class="media-inventory">
+                        <div class="media">
+                            <div class="item-card">
+                                <img src="../assets/media1.jpg" alt="Asst. Vinyl Records" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Vinyl Records" data-price="$35.00">Asst. Vinyl Records</a></h3>
+                                    <p class="item-price">$5.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/media2.jpg" alt="Asst. DvDs" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. DvDs" data-price="$35.00">Asst. DvDs</a></h3>
+                                    <p class="item-price">$3.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Toy Inventory-->
+                <div id="toys-tab" class="tab">
+                    <div class="toys-inventory">
+                        <div class="toys">
+                            <div class="item-card">
+                                <img src="../assets/toy1.jpg" alt="Buzz Lightyear Action Figure" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Buzz Lightyear Action Figure" data-price="$35.00">Buzz Lightyear Action Figure</a></h3>
+                                    <p class="item-price">$2.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/toy2.jpg" alt="Wooden Train" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Wooden Train" data-price="$35.00">Wooden Train</a></h3>
+                                    <p class="item-price">$3.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <img src="../assets/toy3.jpg" alt="Asst. Action Figures" class="item-image">
+                                <div class="item-details">
+                                    <h3 class="item-title"><a href="#!" class="open-modal" data-title="Asst. Action Figures" data-price="$35.00">Asst. Action Figures</a></h3>
+                                    <p class="item-price">$2.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal structure -->
+        <div id="item-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img src="" alt="" class="modal-image">
+                <h3 class="modal-title"></h3>
+                <p class="modal-price"></p>
+            </div>
+        </div>
+
+        <aside>
+            <!-- Placeholder for news/social media feed -->
+            <div class="social-media">
+                <h3>Check out our socials!</h3>
+                <div class="facebook-post">
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid032sT7HVqRDZPvJC7BAn6NjEveHTqfs8iSU7vAcCgCf6LV3wwf29TsfEu95iiCQKmTl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/803041201851307" class="fb-xfbml-parse-ignore"><p>🗣️Calling all diehard collectors! What’s the one thing you always look out for on our shelves?</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/803041201851307">Tuesday, March 26, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid02AEaAuMW9W7wDmsd5Uft3iMeczrBxRhKBK6pVFqLNkaWt6RMfGe2d2yzTy4Q5pwzSl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/798634922291935" class="fb-xfbml-parse-ignore"><p>Spring has sprung! What thrift items are you manifesting for the season?</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/798634922291935">Tuesday, March 19, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid0oRh46SHeFao6HU16qhq3VzLFcGXdt2MpcepqgyZ4x7AtZR99Auxj8SCdhA3WeRTsl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/796219429200151" class="fb-xfbml-parse-ignore"><p>What’s your favorite thing you’ve thrifted for your furry friend? 🐕🐈‍⬛ …bonus points if you comment a pic of them showing it off.</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/796219429200151">Friday, March 15, 2024</a></blockquote></div>
+                </div>
+                <p>Find us on:</p>
+                <div class="social-media-links">
+                    <a href="https://www.facebook.com/GoodwillIntl" target="_blank">
+                        <img src="../../assets/icons/facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://twitter.com/goodwillintl?lang=en" target="_blank">
+                        <img src="../../assets/icons/twitter_logo.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com/goodwillintl/?hl=en" target="_blank">
+                        <img src="../../assets/icons/instagram_logo.png" alt="Instagram" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <section class="contact-us-section">
+        <h2>Have Questions?</h2>
+        <div class="contact-info">
+            <p>Email: info@CheapThrills.org</p>
+            <p>Phone: (888)555-4757</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cheap Thrills © 2024</p>
+        <!-- Social media links, privacy policy, etc. -->
+    </footer>
+
+    <script src="../js/inventoryScripts.js"></script>
+</body>
+</html>
+

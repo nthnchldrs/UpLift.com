@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Cheap Thrills</title>
+    <link rel="stylesheet" href="../css/donateStyles.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=365653965827649" nonce="AdMELUty"></script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="donate.html" class="active">Donate Items</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../../assets/CT_logo_with_background.png" alt="Cheap Thrills Logo">
+            </div>
+
+            <div class="tagline">
+                <h2>WE ARE THRILLED TO ACCEPT YOUR DONATIONS!</h2>
+            </div>
+
+            <div class="weather-widget">
+                <h3>Weather</h3>
+                <p id="weather-description">Loading weather...</p>
+                <p id="temperature"></p>
+                <p id="location"></p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for items...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-contents">
+            <p class="donation-message">
+                Every item you give helps us support a good cause, making affordable treasures
+                available to our community. Your generosity keeps our mission alive, and we're grateful
+                for every contribution.
+            </p>
+
+            <section class="items">
+                <h2>What We Love to Receive:</h2>
+                <ul>
+                    <li>Good Condition Only: Items should be clean and in working order—no damages or repairs needed.</li>
+                    <li>Quality Clothing: Gently used clothing, shoes, and accessories for all ages.</li>
+                    <li>Household Items: Dishes, cookware, small appliances, and home decor.</li>
+                    <li>Toys & Games: Complete sets only, clean and ready for a new home.</li>
+                    <li>Books & Media: In readable/watchable condition, without major damage.</li>
+                    <li>Electronics: Functioning well, with all their parts and cables.</li>
+                    <li>Furniture: Sturdy, without significant damage.</li>
+                </ul>
+
+                <h2>Sorry, We Can't Take:</h2>
+                <ul>
+                    <li>Hazardous stuff or chemicals.</li>
+                    <li>Broken or damaged items.</li>
+                    <li>Items that are missing parts or pieces.</li>
+                    <li>Items that are dirty or in poor condition.</li>
+                    <li>Big appliances/furniture: Refridgerators, stoves, mattress queen sized and above, etc...</li>
+                </ul>
+            </section>
+
+            <section class="donation-instructions">
+                <h2>How to Donate:</h2>
+                <p>To make a donation to Cheap Thrills, we kindly ask that you start by filling out the donation form available on the website. This form will ask for some basic information about you and the item(s) you wish to donate, including a description and the condition of the item(s). Here's how it works:</p>
+                <ol>
+                    <li>Fill Out the Form: Visit our website and complete the donation form below with your details and what you're donating.</li>
+                    <li>Await Confirmation: We'll review your submission and get back to you with a confirmation email, including instructions and a scheduled drop-off time that suits you.</li>
+                    <li>Drop Off Your Donations: Bring your items to Cheap Thrills at your scheduled time. If there are any large items or special considerations, we'll coordinate with you directly to ensure everything goes smoothly.</li>
+                    <!-- More steps... -->
+                </ol>
+                <p>This process helps us manage donations effectively and ensures that your generous contribution is ready to find a new home as soon as possible. Thank you for taking the time to support us through your donation!</p>
+            </section>
+
+            <div class="donate-cta">
+                <a href="#donateModal" class="donate-button">Donate Today!</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="donateModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Donation Form</h2>
+                <form id="donationForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="drop-off-times">Preferred Drop-off times:</label>
+                    <input type="text" id="drop-off-times" name="drop-off-times">
+
+                    <p>Donations accepted during any normal business hours.<br />Mon-Fri 8am-5pm / Sat-Sun 9am-2pm<br />Specialty considerations may be made in select cases.</p>
+
+                    <label for="item-description">Description of item(s):</label>
+                    <textarea id="item-description" name="item-description"  required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Confirmation Modal Structure -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thank you for your donation!</h2>
+                <p>We are truly THRILLED by your desire to help. Your support means the world to us and those we help. Each donation is a step toward a more sustainable and connected community. We'll review your submission and get back to you with a confirmation email, including instructions and a scheduled drop off time that suits you.</p>
+            </div>
+        </div>
+
+        <aside>
+            <!-- Placeholder for news/social media feed -->
+            <div class="social-media">
+                <h3>Check out our socials!</h3>
+                <div class="facebook-post">
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid032sT7HVqRDZPvJC7BAn6NjEveHTqfs8iSU7vAcCgCf6LV3wwf29TsfEu95iiCQKmTl" data-width="350"></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid02AEaAuMW9W7wDmsd5Uft3iMeczrBxRhKBK6pVFqLNkaWt6RMfGe2d2yzTy4Q5pwzSl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/798634922291935" class="fb-xfbml-parse-ignore"><p>Spring has sprung! What thrift items are you manifesting for the season?</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/798634922291935">Tuesday, March 19, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid0oRh46SHeFao6HU16qhq3VzLFcGXdt2MpcepqgyZ4x7AtZR99Auxj8SCdhA3WeRTsl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/796219429200151" class="fb-xfbml-parse-ignore"><p>What’s your favorite thing you’ve thrifted for your furry friend? 🐕🐈‍⬛ …bonus points if you comment a pic of them showing it off.</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/796219429200151">Friday, March 15, 2024</a></blockquote></div>
+                </div>
+                <p>Find us on:</p>
+                <div class="social-media-links">
+                    <a href="https://www.facebook.com/GoodwillIntl" target="_blank">
+                        <img src="../../assets/icons/facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://twitter.com/goodwillintl?lang=en" target="_blank">
+                        <img src="../../assets/icons/twitter_logo.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com/goodwillintl/?hl=en" target="_blank">
+                        <img src="../../assets/icons/instagram_logo.png" alt="Instagram" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <section class="contact-us-section">
+        <h2>Have Questions?</h2>
+        <div class="contact-info">
+            <p>Email: info@CheapThrills.org</p>
+            <p>Phone: (888)555-4757</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cheap Thrills © 2024</p>
+        <!-- Social media links, privacy policy, etc. -->
+    </footer>
+
+    <script src="../js/donateScripts.js"></script>
+</body>
+</html>
+

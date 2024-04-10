@@ -1,1 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap Thrills Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=365653965827649" nonce="AdMELUty"></script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/inventory.html">Inventory</a></li>
+                <li><a href="pages/donate.html">Donate Items</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../assets/CT_logo_with_background.png" alt="Cheap Thrills Logo">
+            </div>
+
+            <div class="tagline">
+                <h2>One's trash...is another's treasure!</h2>
+            </div>
+
+            <div class="weather-widget">
+                <h3>Weather</h3>
+                <p id="weather-description">Loading weather...</p>
+                <p id="temperature"></p>
+                <p id="location"></p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for items...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-contents">
+            <section class="hero-section">
+                <img src="assets/clothes-on-rack.jpg" alt="Deal of the Week">
+                <div class="hero-content">
+                    <h1>Check out this weeks crazy deals!</h1>
+                    <p>Come in this week for 30-50% off all clothing in the store.</p>
+                    <div class="section-buttons">
+                        <a href="#deal-of-the-week" class="cta-button">See clothes in stock</a>
+                        <a href="pages/inventory.html" class="cta-button">View All Inventory</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="donation-section">
+                <img src="assets/donate-box.jpg" alt="Donation request">
+                <div class="donation-content">
+                    <h1>Make a charitable donation today!</h1>
+                    <p>You can donate items directly to Cheap Thrills, or you can donate time or money through our parent company, UPLIFT.</p>
+                    <div class="section-buttons">
+                        <a href="pages/donate.html" class="cta-button">Donate to Cheap Thrills</a>
+                        <a href="../pages/donate.html" class="donate-button">Donate to UpLift</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other sections as needed (e.g., About, Donate Items) -->
+        </div>
+
+        <aside>
+            <!-- Placeholder for news/social media feed -->
+            <div class="social-media">
+                <h3>Check out our socials!</h3>
+                <div class="facebook-post">
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid032sT7HVqRDZPvJC7BAn6NjEveHTqfs8iSU7vAcCgCf6LV3wwf29TsfEu95iiCQKmTl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/803041201851307" class="fb-xfbml-parse-ignore"><p>🗣️Calling all diehard collectors! What’s the one thing you always look out for on our shelves?</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/803041201851307">Tuesday, March 26, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid02AEaAuMW9W7wDmsd5Uft3iMeczrBxRhKBK6pVFqLNkaWt6RMfGe2d2yzTy4Q5pwzSl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/798634922291935" class="fb-xfbml-parse-ignore"><p>Spring has sprung! What thrift items are you manifesting for the season?</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/798634922291935">Tuesday, March 19, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/GoodwillIntl/posts/pfbid0oRh46SHeFao6HU16qhq3VzLFcGXdt2MpcepqgyZ4x7AtZR99Auxj8SCdhA3WeRTsl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/GoodwillIntl/posts/796219429200151" class="fb-xfbml-parse-ignore"><p>What’s your favorite thing you’ve thrifted for your furry friend? 🐕🐈‍⬛ …bonus points if you comment a pic of them showing it off.</p>Posted by <a href="https://www.facebook.com/GoodwillIntl">Goodwill Industries International</a> on&nbsp;<a href="https://www.facebook.com/GoodwillIntl/posts/796219429200151">Friday, March 15, 2024</a></blockquote></div>
+                </div>
+                <p>Find us on:</p>
+                <div class="social-media-links">
+                    <a href="https://www.facebook.com/GoodwillIntl" target="_blank">
+                        <img src="../assets/icons/facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://twitter.com/goodwillintl?lang=en" target="_blank">
+                        <img src="../assets/icons/twitter_logo.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com/goodwillintl/?hl=en" target="_blank">
+                        <img src="../assets/icons/instagram_logo.png" alt="Instagram" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <section class="contact-us-section">
+        <h2>Have Questions?</h2>
+        <div class="contact-info">
+            <p>Email: info@CheapThrills.org</p>
+            <p>Phone: (888)555-4757</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cheap Thrills © 2024</p>
+        <!-- Social media links, privacy policy, etc. -->
+    </footer>
+</body>
+</html>
 
