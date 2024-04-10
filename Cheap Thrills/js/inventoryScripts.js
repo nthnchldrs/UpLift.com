@@ -94,5 +94,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
+
+    // Function to open the tab
+    const openTab = (hash) => {
+        const tab = document.querySelector(hash);
+        if (tab) {
+            // Hide all tabs
+            document.querySelectorAll('.tab').forEach(t => t.style.display = 'none');
+            // Show the selected tab
+            tab.style.display = 'block';
+
+            // Highlight the tab button if necessary
+            document.querySelectorAll('.tab-links li').forEach(li => li.classList.remove('active'));
+            document.querySelector(`.tab-links a[href="${hash}"]`).parentElement.classList.add('active');
+        }
+    };
+
+    // Check if URL hash is present
+    if (window.location.hash) {
+        openTab(window.location.hash);
+    }
+
+    // If you want to support opening tabs by clicking links within the page
+    document.querySelectorAll('.tab-links a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const hash = link.getAttribute('href');
+            history.pushState(null, null, hash); // Update URL without page refresh
+            openTab(hash);
+        });
+    });
+
+
 });
 
