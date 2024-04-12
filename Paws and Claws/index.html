@@ -1,1 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Paws & Claws</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=365653965827649" nonce="AdMELUty"></script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/adoption.html">Adoption</a></li>
+                <li><a href="pages/basicCare.html">Basic Care</a></li>
+                <li><a href="pages/volunteer.html">Volunteer</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../assets/P&C_logo_with_background.png" alt="Cheap Thrills Logo">
+            </div>
+
+            <div class="tagline">
+                <h2>Where you make new friends and meet new family!</h2>
+            </div>
+
+            <div class="weather-widget">
+                <h3>Weather</h3>
+                <p id="weather-description">Loading weather...</p>
+                <p id="temperature"></p>
+                <p id="location"></p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for items...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-contents">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>The Mission of Paws and Claws</h1>
+                    <p>Pets are nature's gift to humanity and it has been scientifically proven that opening homes and hearts to a pet increases our longevity and improves the overall quality of our lives and the life of the pet. At Paws and Claws our mission is to offer resources that will help you take the very best care of your current companion or of a new friend found through our streamlined pet adoption process.</p>
+                    <p>Paws and Claws has over 20 years of experience to help you determine which 'adoptable' is the right fit for you and your family as well as navigating the complicated world of pet care. Stop by our new location and let the experts at Paws and Claws help you find and take care of your special furry friend!</p>
+                </div>
+            </section>
+
+            <section class="donation-section">
+                <img src="assets/volunteerShirt.jpg" alt="Volunteer">
+                <div class="donation-content">
+                    <h1>You can make a difference!</h1>
+                    <p>You can choose to volunteer your time directly with our organization or make a financial donation to our parent organization, UpLift.</p>
+                    <div class="section-buttons">
+                        <a href="pages/volunteer.html" class="cta-button">Volunteer</a>
+                        <a href="../pages/donate.html" class="donate-button">Donate to UpLift</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other sections as needed (e.g., About, Donate Items) -->
+        </div>
+
+        <aside>
+            <!-- Placeholder for news/social media feed -->
+            <div class="social-media">
+                <h3>Check out our socials!</h3>
+                <div class="facebook-post">
+                    <div class="fb-post" data-href="https://www.facebook.com/aspca/posts/pfbid02MSvRYtRkpZDhJziMr6HWV6gEMP8tEes9ax7EB3FyJ5SmkVuTkswddUpSMVKUNZ4bl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/aspca/posts/978934646922610" class="fb-xfbml-parse-ignore"><p>Don’t miss out on the first-ever ASPCA Giving Day! 🐶🐱🐴 With your support, you’ll be joining an ever-growing community...</p>Posted by <a href="https://www.facebook.com/aspca">ASPCA</a> on&nbsp;<a href="https://www.facebook.com/aspca/posts/978934646922610">Wednesday, April 10, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/aspca/posts/pfbid0hyy9Ke76tgnusi1qnA6wUFQyH9XAqoxFJy9awAVA4Pca9fTeUsjSTDjXiBABxKqLl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/aspca/posts/977776833705058" class="fb-xfbml-parse-ignore"><p>Suspected Dogfighting Survivor Goes from Harrowing Past to Heartwarming Home ❤️In honor of...</p>Posted by <a href="https://www.facebook.com/aspca">ASPCA</a> on&nbsp;<a href="https://www.facebook.com/aspca/posts/977776833705058">Monday, April 8, 2024</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/aspca/posts/pfbid02Sdgmo2y5YjwjGcoRJ4uLip9Kniw59bh6VQfxFHQsBSmKTCQVWnmKiTJn2nE3Mm37l" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/aspca/posts/977706373712104" class="fb-xfbml-parse-ignore"><p>Keep your pets safe during the eclipse with these helpful tips from ASPCA&#039;s Dr. Bierbrier! </p>Posted by <a href="https://www.facebook.com/aspca">ASPCA</a> on&nbsp;<a href="https://www.facebook.com/aspca/posts/977706373712104">Monday, April 8, 2024</a></blockquote></div>
+                </div>
+                <p>Find us on:</p>
+                <div class="social-media-links">
+                    <a href="https://www.facebook.com/aspca" target="_blank">
+                        <img src="../assets/icons/facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://twitter.com/ASPCA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                        <img src="../assets/icons/twitter_logo.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com/aspca/?hl=en" target="_blank">
+                        <img src="../assets/icons/instagram_logo.png" alt="Instagram" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <section class="contact-us-section">
+        <h2>Have Questions?</h2>
+        <div class="contact-info">
+            <p>Email: info@PawsandClaws.org</p>
+            <p>Phone: (888)555-7385(PETS)</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Paws & Claws © 2024</p>
+        <!-- Social media links, privacy policy, etc. -->
+    </footer>
+</body>
+</html>
 

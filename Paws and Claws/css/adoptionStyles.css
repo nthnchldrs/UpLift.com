@@ -1,0 +1,679 @@
+/* General Page Styles */
+body {
+    background: #d7ecff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    color: #56adff; /* Primary text color for better contrast */
+    margin: 0;
+}
+
+nav {
+    align-self: end;
+    background: #b0dbf1;
+    height: 30px;
+    margin-right: 30px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+
+        nav ul li {
+            padding: 0 15px;
+        }
+
+            nav ul li:active {
+                background: #e0dff3;
+                opacity: 0.8; /* Adds a slight opacity on click for better UX */
+            }
+
+            nav ul li a {
+                color: #56adff; /* Secondary color for links */
+                text-decoration: none; /* Removes underline from links */
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                    transition-delay: 0.3s; /* Slight delay on hover for better UX */
+                }
+
+                nav ul li a:active {
+                    background: #e0dff3;
+                    opacity: 0.8; /* Adds a slight opacity on click for better UX */
+                }
+
+a {
+    color: #56adff; /* Secondary color for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+    a:active {
+        background: #e1dff4;
+        opacity: 0.8; /* Adds a slight opacity on click for better UX */
+    }
+
+    a:hover {
+        text-decoration: underline; /* Adds underline on hover for better UX */
+        transition-delay: 0.3s; /* Slight delay on hover for better UX */
+    }
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+.logo-container img {
+    max-width: 250px; /* Adjust as per your logo's size */
+    border-radius: 15px;
+    margin: auto 0;
+}
+
+.tagline {
+    align-content: center;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+    .tagline h2 {
+        background: #cdb4db;
+        text-align: center;
+        margin: 0;
+        padding: 20px 30px;
+        border-radius: 5px;
+        color: #56adff;
+        margin: auto;
+    }
+
+
+/* Weather Widget Styles */
+.weather-widget {
+    background-size: cover; /* Cover the entire widget area */
+    background-position: center; /* Center the background image */
+    color: white; /* Ensure text is visible on darker backgrounds */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Maintain rounded corners */
+    position: relative; /* Needed for text visibility enhancements */
+    margin-bottom: 20px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+    .weather-widget h3, .weather-widget p {
+        margin: 5px 0;
+    }
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    grid-column: 3;
+}
+
+    .search-bar input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .search-bar input[type="submit"] {
+        background-color: #cdb4db; /* Secondary color for submit button */
+        color: #56adff;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: #ffc8dd; /* Darker orange on hover */
+        }
+
+    .search-bar button {
+        background-color: #cdb4db; /* Secondary color for submit button */
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .search-bar button:hover {
+            background-color: #ffc8dd; /* Darker orange on hover */
+        }
+
+/* Main Content Styles */
+main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 20px;
+    margin: 0 3rem;
+}
+
+.page-contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Tab link styles */
+.tab-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .tab-links li {
+        margin: 0;
+    }
+
+        .tab-links li a {
+            display: block;
+            padding: 10px;
+            background: #cdb4db;
+            color: #56adff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .tab-links li.active a {
+            background: #ffc8dd;
+        }
+
+/* Tab content styles */
+.tab-content {
+    border-radius: 0 5px 5px 5px;
+    padding: 20px;
+    background: #ffc8dd;
+    border: 1px solid #57adff;
+}
+
+.tab {
+    display: none;
+}
+
+    .tab.active {
+        display: block;
+    }
+
+.all-adoptables, .dogs, .cats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adoptable-card {
+    background-color: #cdb4db; /* Primary color */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+}
+
+.adoptable-image {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the element’s entire content box. */
+    display: block;
+}
+
+.adoptable-details {
+    padding: 15px;
+    color: #56adff; /* Text color */
+    text-align: center; /* Center the text */
+}
+
+.adoptable-title {
+    margin: 10px 0;
+}
+
+.adoptable-age {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* The Modal (background) */
+.adoptable-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.adoptable-modal-content {
+    background-color: #cdb4db;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.adoptable-modal-image {
+    max-width: 70%;
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the element’s entire content box. */
+    display: block;
+    margin: 0 auto;
+}
+
+.adoptable-modal-title, .adoptable-modal-age {
+    background: #ffc8dd;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    color: #56adff; /* Text color */
+}
+
+.adoptable-modal-title {
+    font-size: 1.5em;
+    margin-top: 2rem;
+}
+/* The Close Button */
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close-modal:hover,
+    .close-modal:focus {
+        color: darkred;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.contact-us-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #5aadfe;
+    background-color: #cdb4db; /* Dark overlay for better text visibility */
+    max-width: 80%;
+    border-radius: 8px;
+    margin: 2rem auto;
+}
+
+    .contact-us-section h2 {
+        margin-bottom: 20px;
+    }
+
+/* Aside Styles */
+aside {
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.adoption-container {
+    background-color: #ffc8dd; /* Pink background */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    color: #57adff; /* White text color */
+    max-width: 300px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container in the middle of the page */
+}
+
+    .adoption-container h2 {
+        color: #57adff; /* White text color */
+        font-size: 2em; /* Larger font size for the heading */
+        margin-bottom: 20px; /* Space between the heading and paragraph */
+    }
+
+    .adoption-container p {
+        margin-bottom: 30px; /* Space between the paragraph and button */
+        font-size: 1em; /* Adjust font size as necessary */
+        line-height: 1.5; /* For better readability */
+    }
+
+.adoption-form-button {
+    background-color: #cdb4db; /* Light blue background for the button */
+    padding: 10px 20px;
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners for the button */
+    color: #56adff; /* White text color */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Allow padding and margins */
+    font-size: 1em; /* Font size for the button text */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+    .adoption-form-button:hover {
+        background-color: #d8ebff; /* Darker blue background on hover */
+        cursor: pointer; /* Change cursor to indicate clickable */
+    }
+
+/* The Modal (background) */
+.adoption-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.adoption-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 10px; /* Rounded corners */
+    background: #fcbad3; /* Pink background as seen in the image */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.adoption-modal-content {
+    background-color: #fcbad3; /* Light pink background */
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 60%; /* Set to match the desired width of the form */
+    margin: 10% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #56adff;
+}
+
+    .adoption-modal-content h2 {
+        margin-bottom: 20px;
+        color: #56adff;
+    }
+
+    #adoptionForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .adoption-modal-content form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adoption-modal-content label {
+        margin: 10px 0 5px;
+        align-self: flex-start;
+    }
+
+    .adoption-modal-content input[type="text"],
+    .adoption-modal-content input[type="email"],
+    .adoption-modal-content input[type="tel"],
+    .adoption-modal-content input[type="date"],
+    .adoption-modal-content textarea {
+        width: 100%; /* Match the width to your form width preference */
+        padding: 10px;
+        margin-bottom: 15px; /* Add space below each input */
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box; /* Include padding in the width */
+    }
+
+    .adoption-modal-content input[type="submit"] {
+        background-color: #57adff; /* Light blue */
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+        .adoption-modal-content input[type="submit"]:hover {
+            background-color: #89b0e5; /* A shade darker for hover effect */
+        }
+
+/* Styles for the rows that contain state and zip, home, and cell phone fields */
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    justify-content: right;
+    flex: 1;
+    margin-right: 10px;
+}
+
+    /* This is to ensure the last column doesn't have extra margin on the right */
+    .column:last-child {
+        margin-right: 0;
+    }
+
+/* Adjust the text area height */
+.adoption-modal-content textarea {
+    height: 100px;
+}
+
+/* Confirmation Modal Styling */
+.confirmation-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+    .confirmation-modal .modal-content {
+        position: relative;
+        background-color: #ffc8dd;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 2rem 4rem;
+        border-radius: 5px; /* Rounded corners */
+        width: 40%; /* Width */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Add some shadow for aesthetics */
+    }
+
+    /* Close button styling */
+    .confirmation-modal .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .confirmation-modal .close:hover,
+        .confirmation-modal .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* Additional styling for the content */
+    .confirmation-modal h2 {
+        font-size: 2rem;
+        text-align: center; /* Center-align text */
+        margin-bottom: 20px; /* Space between the heading and paragraph */
+        text-decoration: underline;
+    }
+    .confirmation-modal p {
+        margin: 1rem 2rem;
+        font-size: 1.7rem;
+        text-align: center; /* Center-align text */
+        line-height: 1.5;
+    }
+
+.social-media {
+    background: #cdb4db;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    min-width: 350px;
+}
+
+    .social-media h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #56adff;
+    }
+
+    .social-media p {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #56adff;
+    }
+
+.facebook-post {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #cdb4db; /* Primary color */
+    color: #5aadfe;
+    padding: 2px;
+    text-align: center;
+}
+
+    footer a {
+        color: #5aadfe; /* Maintains secondary color for links in footer */
+    }
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+        nav ul {
+            flex-direction: column;
+            align-items: start;
+        }
+
+            nav ul li {
+                padding: 10px; /* Increase padding for touch targets */
+            }
+
+    .header-content {
+        grid-template-columns: 100%; /* Stack grid adoptables vertically */
+        text-align: center; /* Center-align the content for aesthetics */
+    }
+
+    .logo-container img {
+        max-width: 100px; /* Resize the logo for smaller screens */
+    }
+
+    .tagline h2 {
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin: 1rem 2rem;
+    }
+
+    .weather-widget, .search-bar {
+        max-width: 100%; /* Ensure these elements don't overflow */
+        margin: 10px auto; /* Center align */
+    }
+
+    .search-bar {
+        flex-direction: column; /* Stack input field and button vertically */
+        grid-column: 1;
+    }
+
+        .search-bar button {
+            margin-top: 10px; /* Add space between the input field and button */
+        }
+
+    main {
+        grid-template-columns: 1fr; /* Stack main and aside content vertically */
+        margin: auto;
+    }
+
+    .hero-section, .donation-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align content */
+    }
+
+        .hero-section img, .donation-section img {
+            width: 100%; /* Make images responsive */
+            max-width: 400px; /* Limit max size */
+        }
+
+    aside {
+        padding: 10px;
+    }
+
+    .social-media-links {
+        flex-direction: row; /* Align social media icons horizontally */
+        justify-content: space-around; /* Evenly space icons */
+    }
+
+    .contact-us-section, footer {
+        text-align: center; /* Center-align text for better readability */
+    }
+}
