@@ -39,7 +39,7 @@ nav {
             }
 
                 nav ul li a:hover {
-                    text-decoration: bold;
+                    text-decoration: underline;
                     transition-delay: 0.3s; /* Slight delay on hover for better UX */
                 }
 

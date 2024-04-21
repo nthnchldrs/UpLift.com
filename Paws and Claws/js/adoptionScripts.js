@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error fetching weather data:', error));
 
     // Adoptables tab functionality
-
     const tabs = document.querySelectorAll('.tab-links a');
     const tabContents = document.querySelectorAll('.tab');
 
@@ -71,9 +70,21 @@ document.addEventListener('DOMContentLoaded', function () {
             var age = this.dataset.age;
             var imgSrc = this.closest('.adoptable-card').querySelector('.adoptable-image').src;
 
-            adoptableModal.querySelector('.adoptable-modal-image').src = imgSrc;
-            adoptableModal.querySelector('.adoptable-modal-title').textContent = title;
-            adoptableModal.querySelector('.adoptable-modal-age').textContent = age;
+            var modalContent = adoptableModal.querySelector('.adoptable-modal-content');
+            modalContent.querySelector('.adoptable-modal-image').src = imgSrc;
+            modalContent.querySelector('.adoptable-modal-title').textContent = title;
+            modalContent.querySelector('.adoptable-modal-age').textContent = age;
+
+            // Find the button that opens the adoption form within this modal
+            var adoptionFormButton = modalContent.querySelector('#openAdoptionForm');
+            adoptionFormButton.onclick = function () {
+                // Close the current modal
+                adoptableModal.style.display = "none";
+                // Open the adoption form modal
+                adoptionModal.style.display = 'block';
+                // Autofill the animal type/name field in the adoption form
+                document.getElementById('animal-type').value = title;
+            };
 
             adoptableModal.style.display = "block";
         };
@@ -99,14 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
             event.target.style.display = 'none';
         }
     });
-
-    // Handle the adoption button click to open the adoption modal
-    const adoptionBtn = document.getElementById('adoptionButton');
-    if (adoptionBtn) {
-        adoptionBtn.addEventListener('click', function () {
-            adoptionModal.style.display = 'block';
-        });
-    }
 
     // Handle the adoption form submission
     const form = document.getElementById('adoptionForm');

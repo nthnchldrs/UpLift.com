@@ -270,7 +270,7 @@ main {
 
 /* Modal Content */
 .adoptable-modal-content {
-    background-color: #cdb4db;
+    background-color: #d7ecff;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -297,6 +297,27 @@ main {
     font-size: 1.5em;
     margin-top: 2rem;
 }
+
+/* Styles for the 'Adopt Me!' button in the adoptable modal */
+.adoptable-modal-content .adoption-form-button {
+    display: block; /* Makes the button a block element, allowing it to take up the full width */
+    width: 20%; /* Sets the width to 80% of its container */
+    margin: 20px auto; /* Adds top and bottom margin for spacing, auto centers it horizontally */
+    padding: 12px 0; /* Padding for better clickability and visual size */
+    background-color: #cdb4db; /* The pink color used elsewhere for consistency */
+    color: #56adff; /* The text color that contrasts well with the pink background */
+    border: none; /* No border to keep it clean and modern */
+    border-radius: 5px; /* Rounded corners for a softer, friendlier look */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    font-size: 1em; /* Sets an appropriate font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    text-decoration: underline;
+}
+
+    .adoptable-modal-content .adoption-form-button:hover {
+        background-color: #ffc8dd; /* A lighter shade for hover effect */
+    }
+
 /* The Close Button */
 .close-modal {
     color: #aaa;

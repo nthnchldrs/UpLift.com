@@ -150,9 +150,9 @@
                             </div>
                         </div>
                         <div class="adoptable-card">
-                            <img src="../assets/cat5.jpg" alt="Stormy" class="adoptable-image">
+                            <img src="../assets/cat5.jpg" alt="Mittens" class="adoptable-image">
                             <div class="adoptable-details">
-                                <h3 class="adoptable-title"><a href="#!" class="open-modal" data-title="Stormy" data-age="~3 Years">Stormy</a></h3>
+                                <h3 class="adoptable-title"><a href="#!" class="open-modal" data-title="Mittens" data-age="~3 Years">Mittens</a></h3>
                                 <p class="adoptable-age">~3 Years</p>
                             </div>
                         </div>
@@ -263,9 +263,9 @@
                                 </div>
                             </div>
                             <div class="adoptable-card">
-                                <img src="../assets/cat5.jpg" alt="Stormy" class="adoptable-image">
+                                <img src="../assets/cat5.jpg" alt="Mittens" class="adoptable-image">
                                 <div class="adoptable-details">
-                                    <h3 class="adoptable-title"><a href="#!" class="open-modal" data-title="Stormy" data-age="~3 Years">Stormy</a></h3>
+                                    <h3 class="adoptable-title"><a href="#!" class="open-modal" data-title="Mittens" data-age="~3 Years">Mittens</a></h3>
                                     <p class="adoptable-age">~3 Years</p>
                                 </div>
                             </div>
@@ -275,13 +275,14 @@
             </div>
         </div>
 
-        <!-- Modal structure -->
+        <!-- Adoptable Modal structure -->
         <div id="adoptable-modal" class="adoptable-modal modal">
             <div class="adoptable-modal-content">
                 <span class="close-modal">&times;</span>
                 <img src="" alt="" class="adoptable-modal-image">
                 <h3 class="adoptable-modal-title"></h3>
                 <p class="adoptable-modal-age"></p>
+                <button id="openAdoptionForm" class="adoption-form-button">Adopt Me!</button> <!-- Add this line -->
             </div>
         </div>
 
@@ -291,7 +292,7 @@
             <div class="adoption-container">
                 <h2>Adopt Today!</h2>
                 <p>After searching our gallery of current adoptables, submit a request to adopt your favorite via the button below</p>
-                <button id="adoptionButton"" class="adoption-form-button">Adoption Form</button>
+                <button id="adoptionButton" class="adoption-form-button">Adoption Form</button>
             </div>
 
             <!-- The Modal -->
@@ -329,16 +330,16 @@
                         <div class="row">
                             <div class="column">
                                 <label for="home-phone">Home Phone:</label>
-                                <input type="tel" id="home-phone" name="home-phone" required>
+                                <input type="tel" id="home-phone" name="home-phone"  required>
                             </div>
                             <div class="column">
                                 <label for="cell-phone">Cell Phone:</label>
-                                <input type="tel" id="cell-phone" name="cell-phone" required>
+                                <input type="tel" id="cell-phone" name="cell-phone">
                             </div>
                         </div>
 
                         <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" >
+                        <input type="email" id="email" name="email" required>
 
                         <label for="confirm-email">Confirm Email:</label>
                         <input type="email" id="confirm-email" name="confirm-email" required>
@@ -347,10 +348,10 @@
                         <input type="text" id="animal-type" name="animal-type" required>
 
                         <label for="adoption-date">Preferred date of adoption:</label>
-                        <input type="date" id="adoption-date" name="adoption-date" required>
+                        <input type="date" id="adoption-date" name="adoption-date">
 
                         <label for="additional-comments">Additional Comments:</label>
-                        <textarea id="additional-comments" name="additional-comments" required></textarea>
+                        <textarea id="additional-comments" name="additional-comments"></textarea>
 
                         <input type="submit" value="Submit">
                     </form>
